@@ -848,8 +848,13 @@ img {
 
     /* Ajustes Slider Móvil */
     .slider-btn {
-        font-size: 1.2rem;
-        padding: 5px 10px;
+        font-size: 0.9rem;
+        padding: 5px;
+        background: transparent;
+    }
+    
+    .slider-btn:hover {
+        background: transparent;
     }
 
 
