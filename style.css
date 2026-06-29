@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 body {
     font-family: 'Montserrat', sans-serif; /* Cambiar si se prefiere otra fuente */
@@ -842,7 +846,55 @@ img {
         margin-top: 20px;
     }
 
-    /* Header Móvil */
+    /* Ajustes Slider Móvil */
+    .slider-btn {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+
+
+    /* Ajustes Servicios Móvil */
+    .services-hero {
+        height: 250px;
+    }
+
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+
+    .services-intro-card {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image img {
+        margin-top: -40px; 
+        max-width: 80%;
+    }
+
+    .intro-text {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .accordion-header {
+        padding: 20px;
+    }
+    
+    .accordion-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .accordion-content-inner {
+        padding: 0 20px 20px 64px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================================
+   RESPONSIVIDAD TABLET (HASTA 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+    /* Header Móvil para Tablets y Teléfonos */
     .menu-toggle {
         display: flex;
     }
@@ -879,41 +931,5 @@ img {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
-    }
-
-    /* Ajustes Servicios Móvil */
-    .services-hero {
-        height: 250px;
-    }
-
-    .services-hero h1 {
-        font-size: 2rem;
-    }
-
-    .services-intro-card {
-        grid-template-columns: 1fr;
-    }
-
-    .intro-image img {
-        margin-top: -40px; 
-        max-width: 80%;
-    }
-
-    .intro-text {
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .accordion-header {
-        padding: 20px;
-    }
-    
-    .accordion-header h3 {
-        font-size: 1.2rem;
-    }
-
-    .accordion-content-inner {
-        padding: 0 20px 20px 64px;
-        font-size: 1rem;
     }
 }
